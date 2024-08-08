@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/*RESET*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+
+}
+
+
+nav img {
+    width: 70px;
+}
+
+.nav-link {
+    list-style-type: none;
+    align-items: center;
+    color: black;
+    padding: 5px;
+    margin: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-link:hover {
+    border-bottom: 4px inset black;
+    background-color: rgb(246, 105, 83);
+}
+
+.nav-link:visited {
+    text-decoration: none;
+    color: rgb(36, 23, 217);
+}
+
+
+
+
+
+
+body {
+    background-color: #640b0b;
+}
+
+h1 {
+    display: flex;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.img img {
+    display: flex;
+    width: 100%;
+}
+
+main section.news img {
+    width: 30%;
+}
+
+main section.news p {
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+
+main div.row {
+    margin-right: 0px;
+}
+
+
+section.galeria ul {
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    list-style-type: none;
+    row-gap: 10px;
+    column-gap: 10px;
+    align-content: space-evenly;
+}
+
+
+section.galeria img {
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+section.galeria h3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 5px;
+    font-size: 40px;
+
+}
+
+
+
+
+.descripcion-prod {
+    display: flex;
+    justify-content: center;
+}
+
+.precio-prod {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* RECORDS */
+
+
+div.reprod-uno {
+    grid-area: reprod-uno;
+}
+
+div.reprod-dos {
+    grid-area: reprod-dos;
+}
+
+div.descripcion-disco-uno {
+    grid-area: descripcion-disco-uno;
+}
+
+div.reprod-tres {
+    grid-area: reprod-tres;
+}
+
+div.reprod-cuatro {
+    grid-area: reprod-cuatro;
+}
+
+div.descripcion-disco-dos {
+    grid-area: descripcion-disco-dos;
+}
+
+section.discografia{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding:15px;
+    grid-column: 2;
+    grid-row: 4;
+    grid-template-areas:
+        "reprod-uno descripcion-disco-uno"
+        "reprod-dos descripcion-disco-uno"
+        "descripcion-disco-dos reprod-tres "
+        "descripcion-disco-dos reprod-cuatro ";
+}
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    height: 100px;
+}
+
+.text-footer {
+    font-size: medium;
+}
+
+footer img {
+
+    width: 45px;
+    height: 45px;
+    padding: 3px;
+
+}
+
+footer img:hover {
+    width: 50px;
+    height: 50px;
+}
+
+@media(max-width: 500px) {
+    h1 {
+        font-size: 50px;
+
+    }
+
+    section p {
+        font-size: 15px;
+    }
+
+    .text-footer {
+        font-size: x-small;
+    }
+
+    footer img {
+
+        width: 15px;
+        height: 15px;
+        padding: 1px;
+    }
+
+    footer img:hover {
+        width: 18px;
+        height: 18px;
+    }
+
+    nav img {
+        width: 50px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 960px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    section p {
+        font-size: 20px;
+    }
+
+    .text-footer {
+        font-size: small;
+    }
+
+    footer img {
+
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+    }
+
+    footer img:hover {
+        width: 32px;
+        height: 32px;
+    }
+}
